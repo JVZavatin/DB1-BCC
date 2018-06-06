@@ -2,6 +2,6 @@
 Repositório criado para o trabalho final da matéria de Banco de dados
 
 Alunos:
-Alan Lima Marques
-João Vitor Zavatin (Lider)
-Lucas Patrick
+Alan Lima Marques,\n
+João Vitor Zavatin (Lider),
+Lucas Patrick,
