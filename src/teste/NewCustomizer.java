@@ -38,9 +38,29 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel2 = new javax.swing.JPanel();
-        Filme = new javax.swing.JPanel();
+        ConjuntoDePainel = new javax.swing.JTabbedPane();
+        PainelAtores = new javax.swing.JPanel();
+        try {
+            jScrollPane9 =(javax.swing.JScrollPane)java.beans.Beans.instantiate(getClass().getClassLoader(), "teste.NewCustomizer_jScrollPane1");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (java.io.IOException e) {
+            e.printStackTrace();
+        }
+        JTableAtores = new javax.swing.JTable();
+        jPanel8 = new javax.swing.JPanel();
+        txtAtorNascimento = new java.awt.TextField();
+        jLabelNome11 = new javax.swing.JLabel();
+        jLabelNome12 = new javax.swing.JLabel();
+        txtNomeAtor = new java.awt.TextField();
+        jComboBoxPais3 = new javax.swing.JComboBox<>();
+        jLabelNome13 = new javax.swing.JLabel();
+        NovoAtor = new javax.swing.JButton();
+        btnSalvarAtor = new javax.swing.JButton();
+        btnRemoverAtor = new javax.swing.JButton();
+        btnCancelarAtor = new javax.swing.JButton();
+        btnFecharAtor = new javax.swing.JButton();
+        PainelFilme = new javax.swing.JPanel();
         try {
             jScrollPane1 =(javax.swing.JScrollPane)java.beans.Beans.instantiate(getClass().getClassLoader(), "teste.NewCustomizer_jScrollPane1");
         } catch (ClassNotFoundException e) {
@@ -57,20 +77,225 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
         CBPais = new javax.swing.JComboBox<>();
         jLabelAno = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        jListAtores = new javax.swing.JList<>();
         jLabelAtores = new javax.swing.JLabel();
+        jLabelAtores1 = new javax.swing.JLabel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jListPremio = new javax.swing.JList<>();
         Novo = new javax.swing.JButton();
         btnSalvar = new javax.swing.JButton();
         btnRemover = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         btnFechar = new javax.swing.JButton();
+        PainelDiretores = new javax.swing.JPanel();
+        try {
+            jScrollPane3 =(javax.swing.JScrollPane)java.beans.Beans.instantiate(getClass().getClassLoader(), "teste.NewCustomizer_jScrollPane1");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (java.io.IOException e) {
+            e.printStackTrace();
+        }
+        JTableDiretor = new javax.swing.JTable();
+        jPanel3 = new javax.swing.JPanel();
+        txtNomeDiretor = new java.awt.TextField();
+        jLabelPaisDiretor1 = new javax.swing.JLabel();
+        jLabelNome3 = new javax.swing.JLabel();
+        jComboBoxPais1 = new javax.swing.JComboBox<>();
+        NovoDiretor = new javax.swing.JButton();
+        btnSalvarDiretor = new javax.swing.JButton();
+        btnRemoverDiretor = new javax.swing.JButton();
+        btnCancelarDiretor = new javax.swing.JButton();
+        btnFecharDiretor = new javax.swing.JButton();
+        PainelPais = new javax.swing.JPanel();
+        try {
+            jScrollPane5 =(javax.swing.JScrollPane)java.beans.Beans.instantiate(getClass().getClassLoader(), "teste.NewCustomizer_jScrollPane1");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (java.io.IOException e) {
+            e.printStackTrace();
+        }
+        JTablePais = new javax.swing.JTable();
+        jPanel5 = new javax.swing.JPanel();
+        txtSigla = new java.awt.TextField();
+        jLabelNome4 = new javax.swing.JLabel();
+        jLabelNome5 = new javax.swing.JLabel();
+        txtNomePais = new java.awt.TextField();
+        NovoPais = new javax.swing.JButton();
+        btnSalvarPais = new javax.swing.JButton();
+        btnRemoverPais = new javax.swing.JButton();
+        btnCancelarPais = new javax.swing.JButton();
+        btnFecharPais = new javax.swing.JButton();
+        PainelProdutora = new javax.swing.JPanel();
+        try {
+            jScrollPane6 =(javax.swing.JScrollPane)java.beans.Beans.instantiate(getClass().getClassLoader(), "teste.NewCustomizer_jScrollPane1");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (java.io.IOException e) {
+            e.printStackTrace();
+        }
+        JTablePodutora = new javax.swing.JTable();
+        jPanel6 = new javax.swing.JPanel();
+        jLabelNome6 = new javax.swing.JLabel();
+        jLabelNome7 = new javax.swing.JLabel();
+        txtNomeProdutora = new java.awt.TextField();
+        jComboBoxPais2 = new javax.swing.JComboBox<>();
+        NovoProdutora = new javax.swing.JButton();
+        btnSalvarProdutora = new javax.swing.JButton();
+        btnRemoverProdutora = new javax.swing.JButton();
+        btnCancelarProdutora = new javax.swing.JButton();
+        btnFecharProdutora = new javax.swing.JButton();
+        PainelPremios = new javax.swing.JPanel();
+        try {
+            jScrollPane7 =(javax.swing.JScrollPane)java.beans.Beans.instantiate(getClass().getClassLoader(), "teste.NewCustomizer_jScrollPane1");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (java.io.IOException e) {
+            e.printStackTrace();
+        }
+        JTablePremio = new javax.swing.JTable();
+        jPanel7 = new javax.swing.JPanel();
+        jLabelNome8 = new javax.swing.JLabel();
+        jLabelNome9 = new javax.swing.JLabel();
+        txtAnoPremio = new java.awt.TextField();
+        txtNomePremio = new java.awt.TextField();
+        jLabelNome10 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextAreaPremio = new javax.swing.JTextArea();
+        NovoPremio = new javax.swing.JButton();
+        btnSalvarPremio = new javax.swing.JButton();
+        btnRemoverPremio = new javax.swing.JButton();
+        btnCancelarPremio = new javax.swing.JButton();
+        btnFecharPremio = new javax.swing.JButton();
+        PainelGenero = new javax.swing.JPanel();
+        try {
+            jScrollPane10 =(javax.swing.JScrollPane)java.beans.Beans.instantiate(getClass().getClassLoader(), "teste.NewCustomizer_jScrollPane1");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (java.io.IOException e) {
+            e.printStackTrace();
+        }
+        JTableGenero = new javax.swing.JTable();
+        jPanel9 = new javax.swing.JPanel();
+        jLabelNome15 = new javax.swing.JLabel();
+        txtGenero = new java.awt.TextField();
+        NovoGenero = new javax.swing.JButton();
+        btnSalvarGenero = new javax.swing.JButton();
+        btnRemoverGenero = new javax.swing.JButton();
+        btnCancelarGenero = new javax.swing.JButton();
+        btnFecharGenero = new javax.swing.JButton();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jTabbedPane1.addTab("Atores", jPanel2);
+        PainelAtores.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Filme.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        JTableAtores.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane9.setViewportView(JTableAtores);
+
+        PainelAtores.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 5, 630, 270));
+
+        jPanel8.setBackground(new java.awt.Color(254, 254, 254));
+        jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "REGISTRO DE ATOR"));
+        jPanel8.setToolTipText("");
+        jPanel8.setAlignmentX(0.2F);
+        jPanel8.setAlignmentY(0.7F);
+        jPanel8.setName("Pais_Tab_Panel"); // NOI18N
+        jPanel8.setRequestFocusEnabled(false);
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtAtorNascimento.setName("txtNome"); // NOI18N
+        txtAtorNascimento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAtorNascimentoActionPerformed(evt);
+            }
+        });
+        jPanel8.add(txtAtorNascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 200, 20));
+
+        jLabelNome11.setText("Data Nascimento :");
+        jLabelNome11.setAlignmentX(1.0F);
+        jPanel8.add(jLabelNome11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 120, 20));
+
+        jLabelNome12.setText("Nome:");
+        jLabelNome12.setAlignmentX(1.0F);
+        jPanel8.add(jLabelNome12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 20));
+
+        txtNomeAtor.setName("txtNome"); // NOI18N
+        txtNomeAtor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomeAtorActionPerformed(evt);
+            }
+        });
+        jPanel8.add(txtNomeAtor, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 260, 20));
+
+        jComboBoxPais3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel8.add(jComboBoxPais3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, 240, -1));
+
+        jLabelNome13.setText("Pais :");
+        jLabelNome13.setAlignmentX(1.0F);
+        jPanel8.add(jLabelNome13, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, 70, 20));
+
+        PainelAtores.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 630, 110));
+
+        NovoAtor.setText("Novo");
+        PainelAtores.add(NovoAtor, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
+
+        btnSalvarAtor.setText("Salvar");
+        btnSalvarAtor.setActionCommand("btnAlterar");
+        btnSalvarAtor.setEnabled(false);
+        btnSalvarAtor.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnSalvarAtor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalvarAtorActionPerformed(evt);
+            }
+        });
+        PainelAtores.add(btnSalvarAtor, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 100, 30));
+
+        btnRemoverAtor.setText("Remover");
+        btnRemoverAtor.setActionCommand("btnRemover");
+        btnRemoverAtor.setEnabled(false);
+        btnRemoverAtor.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnRemoverAtor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoverAtorActionPerformed(evt);
+            }
+        });
+        PainelAtores.add(btnRemoverAtor, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 100, 30));
+
+        btnCancelarAtor.setText("Cancelar");
+        btnCancelarAtor.setActionCommand("btnImprimir");
+        btnCancelarAtor.setEnabled(false);
+        btnCancelarAtor.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnCancelarAtor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarAtorActionPerformed(evt);
+            }
+        });
+        PainelAtores.add(btnCancelarAtor, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 100, 30));
+
+        btnFecharAtor.setText("Fechar");
+        btnFecharAtor.setActionCommand("btnFechar");
+        btnFecharAtor.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnFecharAtor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFecharAtorActionPerformed(evt);
+            }
+        });
+        PainelAtores.add(btnFecharAtor, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 100, 30));
+
+        ConjuntoDePainel.addTab("Atores", PainelAtores);
+
+        PainelFilme.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         JTableFilmes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -87,7 +312,7 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
         ));
         jScrollPane1.setViewportView(JTableFilmes);
 
-        Filme.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 5, 630, 230));
+        PainelFilme.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 5, 630, 230));
 
         jPanel1.setBackground(new java.awt.Color(254, 254, 254));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "REGISTRO DE FILMES"));
@@ -118,7 +343,6 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
         jLabelNome.setText("Nome:");
         jLabelNome.setAlignmentX(1.0F);
         jPanel1.add(jLabelNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 20));
-        jLabelNome.getAccessibleContext().setAccessibleName("Nome:");
 
         jLabelDiretor.setText("Diretor :");
         jLabelDiretor.setAlignmentX(1.0F);
@@ -139,12 +363,12 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
         jLabelAno.setAlignmentX(1.0F);
         jPanel1.add(jLabelAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 70, 20));
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        jListAtores.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane2.setViewportView(jList1);
+        jScrollPane2.setViewportView(jListAtores);
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, 220, 70));
 
@@ -154,11 +378,24 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
         jPanel1.add(jLabelAtores, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 70, 20));
         jLabelAtores.getAccessibleContext().setAccessibleName("Atores");
 
-        Filme.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 630, 140));
-        jPanel1.getAccessibleContext().setAccessibleName("REGISTRO DE FILMES");
+        jLabelAtores1.setText("Prêmios :");
+        jLabelAtores1.setAlignmentX(1.0F);
+        jLabelAtores1.setName(""); // NOI18N
+        jPanel1.add(jLabelAtores1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 70, 20));
+
+        jListPremio.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane8.setViewportView(jListPremio);
+
+        jPanel1.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 220, 50));
+
+        PainelFilme.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 630, 140));
 
         Novo.setText("Novo");
-        Filme.add(Novo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
+        PainelFilme.add(Novo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
 
         btnSalvar.setText("Salvar");
         btnSalvar.setActionCommand("btnAlterar");
@@ -169,7 +406,7 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
                 btnSalvarActionPerformed(evt);
             }
         });
-        Filme.add(btnSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 100, 30));
+        PainelFilme.add(btnSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 100, 30));
 
         btnRemover.setText("Remover");
         btnRemover.setActionCommand("btnRemover");
@@ -180,7 +417,7 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
                 btnRemoverActionPerformed(evt);
             }
         });
-        Filme.add(btnRemover, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 100, 30));
+        PainelFilme.add(btnRemover, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 100, 30));
 
         btnCancelar.setText("Cancelar");
         btnCancelar.setActionCommand("btnImprimir");
@@ -191,7 +428,7 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
                 btnCancelarActionPerformed(evt);
             }
         });
-        Filme.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 100, 30));
+        PainelFilme.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 100, 30));
 
         btnFechar.setText("Fechar");
         btnFechar.setActionCommand("btnFechar");
@@ -201,14 +438,520 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
                 btnFecharActionPerformed(evt);
             }
         });
-        Filme.add(btnFechar, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 100, 30));
+        PainelFilme.add(btnFechar, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 100, 30));
 
-        jTabbedPane1.addTab("Filme", Filme);
-        Filme.getAccessibleContext().setAccessibleName("Filme_Tab");
+        ConjuntoDePainel.addTab("Filme", PainelFilme);
+        PainelFilme.getAccessibleContext().setAccessibleName("Filme_Tab");
 
-        add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 575));
-        jTabbedPane1.getAccessibleContext().setAccessibleName("jPanelTabs");
-        jTabbedPane1.getAccessibleContext().setAccessibleDescription("");
+        PainelDiretores.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        JTableDiretor.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane3.setViewportView(JTableDiretor);
+
+        PainelDiretores.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 5, 630, 270));
+
+        jPanel3.setBackground(new java.awt.Color(254, 254, 254));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "REGISTRO DE DIRETOR"));
+        jPanel3.setToolTipText("");
+        jPanel3.setAlignmentX(0.2F);
+        jPanel3.setAlignmentY(0.7F);
+        jPanel3.setName("Diretor_Tab_Panel"); // NOI18N
+        jPanel3.setRequestFocusEnabled(false);
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtNomeDiretor.setName("txtNome"); // NOI18N
+        txtNomeDiretor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomeDiretorActionPerformed(evt);
+            }
+        });
+        jPanel3.add(txtNomeDiretor, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 230, 20));
+
+        jLabelPaisDiretor1.setText("Pais  :");
+        jLabelPaisDiretor1.setAlignmentX(1.0F);
+        jPanel3.add(jLabelPaisDiretor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 70, 20));
+
+        jLabelNome3.setText("Nome:");
+        jLabelNome3.setAlignmentX(1.0F);
+        jPanel3.add(jLabelNome3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 20));
+
+        jComboBoxPais1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel3.add(jComboBoxPais1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 240, -1));
+        jComboBoxPais1.getAccessibleContext().setAccessibleName("PaisDiretor");
+
+        PainelDiretores.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 630, 110));
+        jPanel3.getAccessibleContext().setAccessibleName("REGISTRO DE DIRETOR");
+
+        NovoDiretor.setText("Novo");
+        PainelDiretores.add(NovoDiretor, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
+
+        btnSalvarDiretor.setText("Salvar");
+        btnSalvarDiretor.setActionCommand("btnAlterar");
+        btnSalvarDiretor.setEnabled(false);
+        btnSalvarDiretor.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnSalvarDiretor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalvarDiretorActionPerformed(evt);
+            }
+        });
+        PainelDiretores.add(btnSalvarDiretor, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 100, 30));
+
+        btnRemoverDiretor.setText("Remover");
+        btnRemoverDiretor.setActionCommand("btnRemover");
+        btnRemoverDiretor.setEnabled(false);
+        btnRemoverDiretor.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnRemoverDiretor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoverDiretorActionPerformed(evt);
+            }
+        });
+        PainelDiretores.add(btnRemoverDiretor, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 100, 30));
+
+        btnCancelarDiretor.setText("Cancelar");
+        btnCancelarDiretor.setActionCommand("btnImprimir");
+        btnCancelarDiretor.setEnabled(false);
+        btnCancelarDiretor.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnCancelarDiretor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarDiretorActionPerformed(evt);
+            }
+        });
+        PainelDiretores.add(btnCancelarDiretor, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 100, 30));
+
+        btnFecharDiretor.setText("Fechar");
+        btnFecharDiretor.setActionCommand("btnFechar");
+        btnFecharDiretor.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnFecharDiretor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFecharDiretorActionPerformed(evt);
+            }
+        });
+        PainelDiretores.add(btnFecharDiretor, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 100, 30));
+
+        ConjuntoDePainel.addTab("Diretores", PainelDiretores);
+        PainelDiretores.getAccessibleContext().setAccessibleName("Diretores");
+
+        PainelPais.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        JTablePais.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane5.setViewportView(JTablePais);
+
+        PainelPais.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 5, 630, 270));
+
+        jPanel5.setBackground(new java.awt.Color(254, 254, 254));
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "REGISTRO DE PAIS"));
+        jPanel5.setToolTipText("");
+        jPanel5.setAlignmentX(0.2F);
+        jPanel5.setAlignmentY(0.7F);
+        jPanel5.setName("Pais_Tab_Panel"); // NOI18N
+        jPanel5.setRequestFocusEnabled(false);
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtSigla.setName("txtNome"); // NOI18N
+        txtSigla.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtSiglaActionPerformed(evt);
+            }
+        });
+        jPanel5.add(txtSigla, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 230, 20));
+        txtSigla.getAccessibleContext().setAccessibleName("PaisSigla");
+        txtSigla.getAccessibleContext().setAccessibleDescription("");
+
+        jLabelNome4.setText("Sigla :");
+        jLabelNome4.setAlignmentX(1.0F);
+        jPanel5.add(jLabelNome4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 70, 20));
+        jLabelNome4.getAccessibleContext().setAccessibleName("Sigla:");
+        jLabelNome4.getAccessibleContext().setAccessibleDescription("");
+
+        jLabelNome5.setText("Nome:");
+        jLabelNome5.setAlignmentX(1.0F);
+        jPanel5.add(jLabelNome5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 20));
+
+        txtNomePais.setName("txtNome"); // NOI18N
+        txtNomePais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomePaisActionPerformed(evt);
+            }
+        });
+        jPanel5.add(txtNomePais, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 230, 20));
+
+        PainelPais.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 630, 110));
+
+        NovoPais.setText("Novo");
+        PainelPais.add(NovoPais, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
+
+        btnSalvarPais.setText("Salvar");
+        btnSalvarPais.setActionCommand("btnAlterar");
+        btnSalvarPais.setEnabled(false);
+        btnSalvarPais.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnSalvarPais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalvarPaisActionPerformed(evt);
+            }
+        });
+        PainelPais.add(btnSalvarPais, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 100, 30));
+
+        btnRemoverPais.setText("Remover");
+        btnRemoverPais.setActionCommand("btnRemover");
+        btnRemoverPais.setEnabled(false);
+        btnRemoverPais.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnRemoverPais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoverPaisActionPerformed(evt);
+            }
+        });
+        PainelPais.add(btnRemoverPais, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 100, 30));
+
+        btnCancelarPais.setText("Cancelar");
+        btnCancelarPais.setActionCommand("btnImprimir");
+        btnCancelarPais.setEnabled(false);
+        btnCancelarPais.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnCancelarPais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarPaisActionPerformed(evt);
+            }
+        });
+        PainelPais.add(btnCancelarPais, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 100, 30));
+
+        btnFecharPais.setText("Fechar");
+        btnFecharPais.setActionCommand("btnFechar");
+        btnFecharPais.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnFecharPais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFecharPaisActionPerformed(evt);
+            }
+        });
+        PainelPais.add(btnFecharPais, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 100, 30));
+
+        ConjuntoDePainel.addTab("País", PainelPais);
+        PainelPais.getAccessibleContext().setAccessibleName("");
+
+        PainelProdutora.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        JTablePodutora.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane6.setViewportView(JTablePodutora);
+
+        PainelProdutora.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 5, 630, 270));
+
+        jPanel6.setBackground(new java.awt.Color(254, 254, 254));
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "REGISTRO DE PRODUTORA"));
+        jPanel6.setToolTipText("");
+        jPanel6.setAlignmentX(0.2F);
+        jPanel6.setAlignmentY(0.7F);
+        jPanel6.setName("Pais_Tab_Panel"); // NOI18N
+        jPanel6.setRequestFocusEnabled(false);
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelNome6.setText("Pais :");
+        jLabelNome6.setAlignmentX(1.0F);
+        jPanel6.add(jLabelNome6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 70, 20));
+
+        jLabelNome7.setText("Nome:");
+        jLabelNome7.setAlignmentX(1.0F);
+        jPanel6.add(jLabelNome7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 20));
+
+        txtNomeProdutora.setName("txtNome"); // NOI18N
+        txtNomeProdutora.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomeProdutoraActionPerformed(evt);
+            }
+        });
+        jPanel6.add(txtNomeProdutora, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 230, 20));
+
+        jComboBoxPais2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel6.add(jComboBoxPais2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 230, -1));
+
+        PainelProdutora.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 630, 110));
+
+        NovoProdutora.setText("Novo");
+        PainelProdutora.add(NovoProdutora, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
+
+        btnSalvarProdutora.setText("Salvar");
+        btnSalvarProdutora.setActionCommand("btnAlterar");
+        btnSalvarProdutora.setEnabled(false);
+        btnSalvarProdutora.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnSalvarProdutora.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalvarProdutoraActionPerformed(evt);
+            }
+        });
+        PainelProdutora.add(btnSalvarProdutora, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 100, 30));
+
+        btnRemoverProdutora.setText("Remover");
+        btnRemoverProdutora.setActionCommand("btnRemover");
+        btnRemoverProdutora.setEnabled(false);
+        btnRemoverProdutora.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnRemoverProdutora.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoverProdutoraActionPerformed(evt);
+            }
+        });
+        PainelProdutora.add(btnRemoverProdutora, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 100, 30));
+
+        btnCancelarProdutora.setText("Cancelar");
+        btnCancelarProdutora.setActionCommand("btnImprimir");
+        btnCancelarProdutora.setEnabled(false);
+        btnCancelarProdutora.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnCancelarProdutora.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarProdutoraActionPerformed(evt);
+            }
+        });
+        PainelProdutora.add(btnCancelarProdutora, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 100, 30));
+
+        btnFecharProdutora.setText("Fechar");
+        btnFecharProdutora.setActionCommand("btnFechar");
+        btnFecharProdutora.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnFecharProdutora.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFecharProdutoraActionPerformed(evt);
+            }
+        });
+        PainelProdutora.add(btnFecharProdutora, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 100, 30));
+
+        ConjuntoDePainel.addTab("Produtora", PainelProdutora);
+
+        PainelPremios.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        JTablePremio.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane7.setViewportView(JTablePremio);
+
+        PainelPremios.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 5, 630, 270));
+
+        jPanel7.setBackground(new java.awt.Color(254, 254, 254));
+        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "REGISTRO DE PRÊMIOS"));
+        jPanel7.setToolTipText("");
+        jPanel7.setAlignmentX(0.2F);
+        jPanel7.setAlignmentY(0.7F);
+        jPanel7.setName("Pais_Tab_Panel"); // NOI18N
+        jPanel7.setRequestFocusEnabled(false);
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelNome8.setText("Ano :");
+        jLabelNome8.setAlignmentX(1.0F);
+        jPanel7.add(jLabelNome8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 70, 20));
+
+        jLabelNome9.setText("Descrição :");
+        jLabelNome9.setAlignmentX(1.0F);
+        jPanel7.add(jLabelNome9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 70, 20));
+
+        txtAnoPremio.setName("txtNome"); // NOI18N
+        txtAnoPremio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAnoPremioActionPerformed(evt);
+            }
+        });
+        jPanel7.add(txtAnoPremio, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 230, 20));
+
+        txtNomePremio.setName("txtNome"); // NOI18N
+        txtNomePremio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomePremioActionPerformed(evt);
+            }
+        });
+        jPanel7.add(txtNomePremio, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 230, 20));
+
+        jLabelNome10.setText("Nome :");
+        jLabelNome10.setAlignmentX(1.0F);
+        jPanel7.add(jLabelNome10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 20));
+
+        jTextAreaPremio.setColumns(20);
+        jTextAreaPremio.setRows(5);
+        jScrollPane4.setViewportView(jTextAreaPremio);
+
+        jPanel7.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, 240, 80));
+
+        PainelPremios.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 630, 110));
+
+        NovoPremio.setText("Novo");
+        PainelPremios.add(NovoPremio, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
+
+        btnSalvarPremio.setText("Salvar");
+        btnSalvarPremio.setActionCommand("btnAlterar");
+        btnSalvarPremio.setEnabled(false);
+        btnSalvarPremio.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnSalvarPremio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalvarPremioActionPerformed(evt);
+            }
+        });
+        PainelPremios.add(btnSalvarPremio, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 100, 30));
+
+        btnRemoverPremio.setText("Remover");
+        btnRemoverPremio.setActionCommand("btnRemover");
+        btnRemoverPremio.setEnabled(false);
+        btnRemoverPremio.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnRemoverPremio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoverPremioActionPerformed(evt);
+            }
+        });
+        PainelPremios.add(btnRemoverPremio, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 100, 30));
+
+        btnCancelarPremio.setText("Cancelar");
+        btnCancelarPremio.setActionCommand("btnImprimir");
+        btnCancelarPremio.setEnabled(false);
+        btnCancelarPremio.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnCancelarPremio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarPremioActionPerformed(evt);
+            }
+        });
+        PainelPremios.add(btnCancelarPremio, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 100, 30));
+
+        btnFecharPremio.setText("Fechar");
+        btnFecharPremio.setActionCommand("btnFechar");
+        btnFecharPremio.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnFecharPremio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFecharPremioActionPerformed(evt);
+            }
+        });
+        PainelPremios.add(btnFecharPremio, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 100, 30));
+
+        ConjuntoDePainel.addTab("Prêmios", PainelPremios);
+
+        PainelGenero.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        JTableGenero.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane10.setViewportView(JTableGenero);
+
+        PainelGenero.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 5, 630, 270));
+
+        jPanel9.setBackground(new java.awt.Color(254, 254, 254));
+        jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "REGISTRO DE GENERO"));
+        jPanel9.setToolTipText("");
+        jPanel9.setAlignmentX(0.2F);
+        jPanel9.setAlignmentY(0.7F);
+        jPanel9.setName("Pais_Tab_Panel"); // NOI18N
+        jPanel9.setRequestFocusEnabled(false);
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelNome15.setText("Nome do Genero:");
+        jLabelNome15.setAlignmentX(1.0F);
+        jPanel9.add(jLabelNome15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 120, 20));
+
+        txtGenero.setName("txtNome"); // NOI18N
+        txtGenero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtGeneroActionPerformed(evt);
+            }
+        });
+        jPanel9.add(txtGenero, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 230, 20));
+
+        PainelGenero.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 630, 110));
+
+        NovoGenero.setText("Novo");
+        PainelGenero.add(NovoGenero, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
+
+        btnSalvarGenero.setText("Salvar");
+        btnSalvarGenero.setActionCommand("btnAlterar");
+        btnSalvarGenero.setEnabled(false);
+        btnSalvarGenero.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnSalvarGenero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalvarGeneroActionPerformed(evt);
+            }
+        });
+        PainelGenero.add(btnSalvarGenero, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 100, 30));
+
+        btnRemoverGenero.setText("Remover");
+        btnRemoverGenero.setActionCommand("btnRemover");
+        btnRemoverGenero.setEnabled(false);
+        btnRemoverGenero.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnRemoverGenero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoverGeneroActionPerformed(evt);
+            }
+        });
+        PainelGenero.add(btnRemoverGenero, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 100, 30));
+
+        btnCancelarGenero.setText("Cancelar");
+        btnCancelarGenero.setActionCommand("btnImprimir");
+        btnCancelarGenero.setEnabled(false);
+        btnCancelarGenero.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnCancelarGenero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarGeneroActionPerformed(evt);
+            }
+        });
+        PainelGenero.add(btnCancelarGenero, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 100, 30));
+
+        btnFecharGenero.setText("Fechar");
+        btnFecharGenero.setActionCommand("btnFechar");
+        btnFecharGenero.setPreferredSize(new java.awt.Dimension(90, 29));
+        btnFecharGenero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFecharGeneroActionPerformed(evt);
+            }
+        });
+        PainelGenero.add(btnFecharGenero, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 100, 30));
+
+        ConjuntoDePainel.addTab("Generos", PainelGenero);
+
+        add(ConjuntoDePainel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 490));
+        ConjuntoDePainel.getAccessibleContext().setAccessibleName("jPanelTabs");
+        ConjuntoDePainel.getAccessibleContext().setAccessibleDescription("");
 
         getAccessibleContext().setAccessibleName("");
     }// </editor-fold>//GEN-END:initComponents
@@ -282,6 +1025,138 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
         this.dispose();
     }//GEN-LAST:event_btnFecharActionPerformed
 
+    private void txtNomeDiretorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeDiretorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomeDiretorActionPerformed
+
+    private void btnSalvarDiretorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarDiretorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSalvarDiretorActionPerformed
+
+    private void btnRemoverDiretorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverDiretorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRemoverDiretorActionPerformed
+
+    private void btnCancelarDiretorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarDiretorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarDiretorActionPerformed
+
+    private void btnFecharDiretorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharDiretorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFecharDiretorActionPerformed
+
+    private void txtSiglaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSiglaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSiglaActionPerformed
+
+    private void btnSalvarPaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarPaisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSalvarPaisActionPerformed
+
+    private void btnRemoverPaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverPaisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRemoverPaisActionPerformed
+
+    private void btnCancelarPaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarPaisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarPaisActionPerformed
+
+    private void btnFecharPaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharPaisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFecharPaisActionPerformed
+
+    private void txtNomePaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomePaisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomePaisActionPerformed
+
+    private void txtNomeProdutoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeProdutoraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomeProdutoraActionPerformed
+
+    private void btnSalvarProdutoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarProdutoraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSalvarProdutoraActionPerformed
+
+    private void btnRemoverProdutoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverProdutoraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRemoverProdutoraActionPerformed
+
+    private void btnCancelarProdutoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarProdutoraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarProdutoraActionPerformed
+
+    private void btnFecharProdutoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharProdutoraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFecharProdutoraActionPerformed
+
+    private void txtAnoPremioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoPremioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAnoPremioActionPerformed
+
+    private void btnSalvarPremioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarPremioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSalvarPremioActionPerformed
+
+    private void btnRemoverPremioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverPremioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRemoverPremioActionPerformed
+
+    private void btnCancelarPremioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarPremioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarPremioActionPerformed
+
+    private void btnFecharPremioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharPremioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFecharPremioActionPerformed
+
+    private void txtNomePremioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomePremioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomePremioActionPerformed
+
+    private void txtAtorNascimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAtorNascimentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAtorNascimentoActionPerformed
+
+    private void txtNomeAtorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeAtorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomeAtorActionPerformed
+
+    private void btnSalvarAtorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarAtorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSalvarAtorActionPerformed
+
+    private void btnRemoverAtorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverAtorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRemoverAtorActionPerformed
+
+    private void btnCancelarAtorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarAtorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarAtorActionPerformed
+
+    private void btnFecharAtorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharAtorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFecharAtorActionPerformed
+
+    private void txtGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGeneroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtGeneroActionPerformed
+
+    private void btnSalvarGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarGeneroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSalvarGeneroActionPerformed
+
+    private void btnRemoverGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverGeneroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRemoverGeneroActionPerformed
+
+    private void btnCancelarGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarGeneroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarGeneroActionPerformed
+
+    private void btnFecharGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharGeneroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFecharGeneroActionPerformed
+
     
     private void loadRecords() throws SQLException {
         String sql = "SELECT Nome, Ano, Diretor_NomeDiretor FROM Filme ORDER BY Nome";
@@ -336,24 +1211,107 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> CBPais;
-    private javax.swing.JPanel Filme;
+    private javax.swing.JTabbedPane ConjuntoDePainel;
+    private javax.swing.JTable JTableAtores;
+    private javax.swing.JTable JTableDiretor;
     private javax.swing.JTable JTableFilmes;
+    private javax.swing.JTable JTableGenero;
+    private javax.swing.JTable JTablePais;
+    private javax.swing.JTable JTablePodutora;
+    private javax.swing.JTable JTablePremio;
     private javax.swing.JButton Novo;
+    private javax.swing.JButton NovoAtor;
+    private javax.swing.JButton NovoDiretor;
+    private javax.swing.JButton NovoGenero;
+    private javax.swing.JButton NovoPais;
+    private javax.swing.JButton NovoPremio;
+    private javax.swing.JButton NovoProdutora;
+    private javax.swing.JPanel PainelAtores;
+    private javax.swing.JPanel PainelDiretores;
+    private javax.swing.JPanel PainelFilme;
+    private javax.swing.JPanel PainelGenero;
+    private javax.swing.JPanel PainelPais;
+    private javax.swing.JPanel PainelPremios;
+    private javax.swing.JPanel PainelProdutora;
     private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnCancelarAtor;
+    private javax.swing.JButton btnCancelarDiretor;
+    private javax.swing.JButton btnCancelarGenero;
+    private javax.swing.JButton btnCancelarPais;
+    private javax.swing.JButton btnCancelarPremio;
+    private javax.swing.JButton btnCancelarProdutora;
     private javax.swing.JButton btnFechar;
+    private javax.swing.JButton btnFecharAtor;
+    private javax.swing.JButton btnFecharDiretor;
+    private javax.swing.JButton btnFecharGenero;
+    private javax.swing.JButton btnFecharPais;
+    private javax.swing.JButton btnFecharPremio;
+    private javax.swing.JButton btnFecharProdutora;
     private javax.swing.JButton btnRemover;
+    private javax.swing.JButton btnRemoverAtor;
+    private javax.swing.JButton btnRemoverDiretor;
+    private javax.swing.JButton btnRemoverGenero;
+    private javax.swing.JButton btnRemoverPais;
+    private javax.swing.JButton btnRemoverPremio;
+    private javax.swing.JButton btnRemoverProdutora;
     private javax.swing.JButton btnSalvar;
+    private javax.swing.JButton btnSalvarAtor;
+    private javax.swing.JButton btnSalvarDiretor;
+    private javax.swing.JButton btnSalvarGenero;
+    private javax.swing.JButton btnSalvarPais;
+    private javax.swing.JButton btnSalvarPremio;
+    private javax.swing.JButton btnSalvarProdutora;
+    private javax.swing.JComboBox<String> jComboBoxPais1;
+    private javax.swing.JComboBox<String> jComboBoxPais2;
+    private javax.swing.JComboBox<String> jComboBoxPais3;
     private javax.swing.JLabel jLabelAno;
     private javax.swing.JLabel jLabelAtores;
+    private javax.swing.JLabel jLabelAtores1;
     private javax.swing.JLabel jLabelDiretor;
     private javax.swing.JLabel jLabelNome;
-    private javax.swing.JList<String> jList1;
+    private javax.swing.JLabel jLabelNome10;
+    private javax.swing.JLabel jLabelNome11;
+    private javax.swing.JLabel jLabelNome12;
+    private javax.swing.JLabel jLabelNome13;
+    private javax.swing.JLabel jLabelNome15;
+    private javax.swing.JLabel jLabelNome3;
+    private javax.swing.JLabel jLabelNome4;
+    private javax.swing.JLabel jLabelNome5;
+    private javax.swing.JLabel jLabelNome6;
+    private javax.swing.JLabel jLabelNome7;
+    private javax.swing.JLabel jLabelNome8;
+    private javax.swing.JLabel jLabelNome9;
+    private javax.swing.JLabel jLabelPaisDiretor1;
+    private javax.swing.JList<String> jListAtores;
+    private javax.swing.JList<String> jListPremio;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JTextArea jTextAreaPremio;
     private java.awt.TextField txtAno;
+    private java.awt.TextField txtAnoPremio;
+    private java.awt.TextField txtAtorNascimento;
+    private java.awt.TextField txtGenero;
     private java.awt.TextField txtNome;
+    private java.awt.TextField txtNomeAtor;
+    private java.awt.TextField txtNomeDiretor;
+    private java.awt.TextField txtNomePais;
+    private java.awt.TextField txtNomePremio;
+    private java.awt.TextField txtNomeProdutora;
+    private java.awt.TextField txtSigla;
     // End of variables declaration//GEN-END:variables
 }
