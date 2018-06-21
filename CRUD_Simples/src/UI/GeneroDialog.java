@@ -13,6 +13,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import MODEL.Genero;
 import DAO.GeneroDAO;
 import java.awt.Color;
+import javax.swing.JDialog;
 
 /**
  *
@@ -202,12 +203,23 @@ public class GeneroDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSalvarGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarGeneroActionPerformed
+        
+        
+         if (txtGeneroNome.getText().length()<1 ){ // Evita que um valor '' seja inserido no banco
+                        //enableButtons(false, true, true, false);
+                        JOptionPane.showMessageDialog(null,"Nome do gênero vazio !");
+                        
+                    } else {
+                        //enableButtons(false, true, true, true);
+                    
         int dialogResult = JOptionPane.showConfirmDialog(null, "Você tem certeza que deseja salvar esse registro?", "Confirmação?", JOptionPane.YES_NO_OPTION);
-
+        
+        
         if (dialogResult == JOptionPane.YES_OPTION) {
             try {
                 if (addRecord == true) {
                     addNew();
+                    
                 } else {
                     updateRecord();
                 }
@@ -222,10 +234,13 @@ public class GeneroDialog extends javax.swing.JDialog {
                 enableButtons(true, false, false, false);
                 
                 loadRecords();
+                
             } catch (SQLException ex) {
                 System.out.println(ex.getMessage());
             }
         }
+        
+         }
     }//GEN-LAST:event_btnSalvarGeneroActionPerformed
 
  
@@ -270,6 +285,14 @@ public class GeneroDialog extends javax.swing.JDialog {
         addRecord = true;
     
         clearInputBoxes();
+        
+        /*if (txtGeneroNome.getText().length()<1 ){ // Evita que um valor '' seja inserido no banco
+                        enableButtons(false, true, true, false);  
+                    } else {
+                        enableButtons(false, true, true, true);
+                    }
+        */ // não é aaqui
+                    
         
         txtGeneroDesc.setEnabled(true);
         txtGeneroNome.setEnabled(true);
