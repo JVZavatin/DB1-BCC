@@ -5,6 +5,7 @@
  */
 package Main;
 import UI.GeneroDialog;
+import UI.PaisDialog;
 //import javax.swing.*;
 
 /**
@@ -18,7 +19,9 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        new GeneroDialog().setVisible(true);
+        //new GeneroDialog().setVisible(true);
+          new PaisDialog().setVisible(true);
+        
         //new frmPrincipal().setVisible(true);
     }
     

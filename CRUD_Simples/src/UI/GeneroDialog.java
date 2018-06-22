@@ -221,6 +221,8 @@ public class GeneroDialog extends javax.swing.JDialog {
                     addNew();
                     
                 } else {
+                    
+                    
                     updateRecord();
                 }
                 addRecord = false;
@@ -257,6 +259,9 @@ public class GeneroDialog extends javax.swing.JDialog {
                     
                     txtGeneroNome.setEnabled(false);
                     txtGeneroNome.setBackground(Color.gray);
+                    
+                    txtGeneroDesc.setEnabled(false);
+                    txtGeneroDesc.setBackground(Color.gray);
                     
                 } catch (SQLException ex) {
                     System.out.println(ex.getMessage());
@@ -376,8 +381,9 @@ public class GeneroDialog extends javax.swing.JDialog {
         Genero g = new Genero();
         g.setIdGenero(txtGeneroNome.getText());
         g.setDescricao(txtGeneroDesc.getText());
+        Object id = JTableGenero.getValueAt(JTableGenero.getSelectedRow(), 0);
         GeneroDAO dao = new GeneroDAO();
-        dao.update(g);
+        dao.update(g,id.toString());
     }
 
     private void deleteRecord() throws SQLException {

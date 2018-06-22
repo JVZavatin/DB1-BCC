@@ -1,0 +1,15 @@
+Versões :
+
+DB1-BCC-Master :
+	*Protótipo de todas as telas
+
+CRUD SIMPLES :
+	* Seperação da interface de inserção de gênero , antes no protótipo todas em um JFrame de Tabs, agora cada uma separada em um JDialog diferente
+
+CRUD SIMPLES V2 :
+	*Todas interações funcionando, mas alguns erros ainda são permitidos e interface permitia digitar nas caixas de texto após se remover um registro, antes de apertar o botão NOVO
+
+CRUD SIMPLES V3 :
+	* Organização dos arquivos de projeto 
+	* Problemas corrigidos e novo CRUD simples de país ( em preparação para o crud 1:N de Diretor ou Ator ) implementado
+	* Retorno visual caso uma nova sigla de país que seja digita não seja permitida.

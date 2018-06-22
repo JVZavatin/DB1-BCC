@@ -1,5 +1,6 @@
 package DAO;
 
+import DAO.DbConnection;
 import MODEL.Pais;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,13 +12,13 @@ import java.util.ArrayList;
  *
  * @author André  Schwerz
  */
-public class PaisDAO extends DbConnection{/*
+public class PaisDAO extends DbConnection{
     private Connection conn;
-    private final String sqlInsert = "INSERT INTO Pais (sigla, nome) VALUES (?,?)";
-    private final String sqlUpdate = "UPDATE Pais SET nome = ? WHERE sigla = ? ";
-    private final String sqlRemove = "DELETE FROM Pais WHERE sigla = ?";
-    private final String sqlList   = "SELECT sigla, nome FROM Pais ORDER BY nome";
-    private final String sqlFind   = "SELECT sigla, nome FROM Pais WHERE sigla = ?";
+    private final String sqlInsert = "INSERT INTO Filme.Pais (Sigla, Nome) VALUES (?,?)";
+    private final String sqlUpdate = "UPDATE Filme.Pais SET Sigla=?, Nome =?  WHERE Sigla = ? ";
+    private final String sqlRemove = "DELETE FROM Filme.Pais WHERE Sigla = ?";
+    private final String sqlList   = "SELECT Sigla, Nome FROM Filme.Pais ORDER BY Nome";
+    private final String sqlFind   = "SELECT Sigla, Nome FROM Filme.Pais WHERE Sigla = ?";
 
     public void insert(Pais pais) throws SQLException{
         conn = connect();
@@ -35,13 +36,14 @@ public class PaisDAO extends DbConnection{/*
         
     }
     
-    public void update(Pais pais) throws SQLException{
+    public void update(Pais pais, String antigo) throws SQLException{
         PreparedStatement ps = null;
         try{
             conn = connect();
             ps = conn.prepareStatement(sqlUpdate);
-            ps.setString(1, pais.getNome());
-            ps.setString(2, pais.getSigla());
+            ps.setString(1, pais.getSigla());
+            ps.setString(2, pais.getNome());
+            ps.setString(3, antigo);
             ps.execute();
         }
         finally{
@@ -76,8 +78,8 @@ public class PaisDAO extends DbConnection{/*
             Pais pais;
             while (rs.next()){
                 pais = new Pais();
-                pais.setSigla(rs.getString("sigla"));
-                pais.setNome(rs.getString("nome"));
+                pais.setSigla(rs.getString("Sigla"));
+                pais.setNome(rs.getString("Nome"));
                 list.add(pais);
             }
             return list;
@@ -102,8 +104,8 @@ public class PaisDAO extends DbConnection{/*
 
             if (rs.next()){
                 pais = new Pais();
-                pais.setSigla(rs.getString("sigla"));
-                pais.setNome(rs.getString("nome"));
+                pais.setSigla(rs.getString("Sigla"));
+                pais.setNome(rs.getString("Nome"));
             }
             return pais;
         }
@@ -113,5 +115,5 @@ public class PaisDAO extends DbConnection{/*
             close(conn);
         }       
     }
-*/
+
 }

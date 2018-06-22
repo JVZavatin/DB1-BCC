@@ -39,7 +39,7 @@ public class GeneroDAO extends DbConnection{
         }
     }
 
-    public void update(Genero genero) throws SQLException{
+    public void update(Genero genero, String antigo) throws SQLException{
         PreparedStatement ps = null;
         try{
             conn = connect();
@@ -47,7 +47,8 @@ public class GeneroDAO extends DbConnection{
             
             ps.setString(1, genero.getIdGenero());
             ps.setString(2, genero.getDescricao());
-            ps.setString(3, genero.getIdGenero());
+            ps.setString(3, antigo);
+            //ps.setString(3, genero.getIdGenero());
             
             //ps.setString(1, circuito.getPais().getSigla());
             //ps.setString(2, circuito.getNome());
