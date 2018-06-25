@@ -13,3 +13,6 @@ CRUD SIMPLES V3 :
 	* Organização dos arquivos de projeto 
 	* Problemas corrigidos e novo CRUD simples de país ( em preparação para o crud 1:N de Diretor ou Ator ) implementado
 	* Retorno visual caso uma nova sigla de país que seja digita não seja permitida.
+
+CRUD 1:N :
+	* CRUD para registro de atores, com Nome, Data de nascimento e País de origem ( chave estrangeira da tabela país ) 
