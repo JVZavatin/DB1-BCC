@@ -100,7 +100,7 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
         txtNomeDiretor = new java.awt.TextField();
         jLabelPaisDiretor1 = new javax.swing.JLabel();
         jLabelNome3 = new javax.swing.JLabel();
-        jComboBoxPais1 = new javax.swing.JComboBox<>();
+        jComboBoxPais = new javax.swing.JComboBox<>();
         NovoDiretor = new javax.swing.JButton();
         btnSalvarDiretor = new javax.swing.JButton();
         btnRemoverDiretor = new javax.swing.JButton();
@@ -248,6 +248,11 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
         PainelAtores.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 630, 110));
 
         NovoAtor.setText("Novo");
+        NovoAtor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NovoAtorActionPerformed(evt);
+            }
+        });
         PainelAtores.add(NovoAtor, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
 
         btnSalvarAtor.setText("Salvar");
@@ -487,12 +492,11 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
         jLabelNome3.setAlignmentX(1.0F);
         jPanel3.add(jLabelNome3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 20));
 
-        jComboBoxPais1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel3.add(jComboBoxPais1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 240, -1));
-        jComboBoxPais1.getAccessibleContext().setAccessibleName("PaisDiretor");
+        jComboBoxPais.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel3.add(jComboBoxPais, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 240, -1));
+        jComboBoxPais.getAccessibleContext().setAccessibleName("PaisDiretor");
 
         PainelDiretores.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 630, 110));
-        jPanel3.getAccessibleContext().setAccessibleName("REGISTRO DE DIRETOR");
 
         NovoDiretor.setText("Novo");
         PainelDiretores.add(NovoDiretor, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
@@ -1030,19 +1034,59 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
     }//GEN-LAST:event_txtNomeDiretorActionPerformed
 
     private void btnSalvarDiretorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarDiretorActionPerformed
-        // TODO add your handling code here:
+        int dialogResult = JOptionPane.showConfirmDialog(null, "Você tem certeza que deseja salvar esse registro?", "Confirmação?", JOptionPane.YES_NO_OPTION);
+
+        if (dialogResult == JOptionPane.YES_OPTION) {
+            try {
+                if (addRecord == true) {
+                    addNew();
+                } else {
+                    updateRecord();
+                }
+                addRecord = false;
+
+                txtNomeDiretor.setEnabled(false);
+                jComboBoxPais.setEnabled(false);
+
+                enableButtons(true, false, false, false);
+
+                loadRecords();
+            } catch (SQLException ex) {
+                System.out.println(ex.getMessage());
+            }
+        }
     }//GEN-LAST:event_btnSalvarDiretorActionPerformed
 
     private void btnRemoverDiretorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverDiretorActionPerformed
-        // TODO add your handling code here:
+        if (!txtNomeDiretor.getText().isEmpty()) {
+            int dialogResult = JOptionPane.showConfirmDialog(null, "Você tem certeza que deseja excluir esse registro?", "Confirmação?", JOptionPane.YES_NO_OPTION);
+
+            if (dialogResult == JOptionPane.YES_OPTION) {
+                try {
+                    deleteRecord();
+                    loadRecords();
+                    clearInputBoxes();
+                    enableButtons(true, false, false, false);
+
+                    txtNomeDiretor.setEnabled(false);
+
+                } catch (SQLException ex) {
+                    System.out.println(ex.getMessage());
+                }
+            }
+        }
     }//GEN-LAST:event_btnRemoverDiretorActionPerformed
 
     private void btnCancelarDiretorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarDiretorActionPerformed
-        // TODO add your handling code here:
+        clearInputBoxes();
+        enableButtons(true, false, false, false);
+        addRecord = false;
+        txtNomeDiretor.setEnabled(false);
+        jComboBoxPais.setEnabled(false);
     }//GEN-LAST:event_btnCancelarDiretorActionPerformed
 
     private void btnFecharDiretorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharDiretorActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
     }//GEN-LAST:event_btnFecharDiretorActionPerformed
 
     private void txtSiglaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSiglaActionPerformed
@@ -1122,19 +1166,63 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
     }//GEN-LAST:event_txtNomeAtorActionPerformed
 
     private void btnSalvarAtorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarAtorActionPerformed
-        // TODO add your handling code here:
+         int dialogResult = JOptionPane.showConfirmDialog(null, "Você tem certeza que deseja salvar esse registro?", "Confirmação?", JOptionPane.YES_NO_OPTION);
+
+        if (dialogResult == JOptionPane.YES_OPTION) {
+            try {
+                if (addRecord == true) {
+                    addNew();
+                } else {
+                    updateRecord();
+                }
+                addRecord = false;
+
+                txtNomeAtor.setEnabled(false);
+                txtAtorNascimento.setEnabled(false);
+                jComboBoxPais3.setEnabled(false);
+                
+                enableButtons(true, false, false, false);
+
+                loadRecords();
+            } catch (SQLException ex) {
+                System.out.println(ex.getMessage());
+            }
+        }
     }//GEN-LAST:event_btnSalvarAtorActionPerformed
 
     private void btnRemoverAtorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverAtorActionPerformed
-        // TODO add your handling code here:
+         if ((!txtNomeAtor.getText().isEmpty()) && (!txtAtorNascimento.getText().isEmpty())) {
+            int dialogResult = JOptionPane.showConfirmDialog(null, "Você tem certeza que deseja excluir esse registro?", "Confirmação?", JOptionPane.YES_NO_OPTION);
+
+            if (dialogResult == JOptionPane.YES_OPTION) {
+                try {
+                    deleteRecord();
+                    loadRecords();
+                    clearInputBoxes();
+                    enableButtons(true, false, false, false);
+
+                    txtNomeAtor.setEnabled(false);
+                    txtAtorNascimento.setEnabled(false);
+                    jComboBoxPais3.setEnabled(false);
+
+                } catch (SQLException ex) {
+                    System.out.println(ex.getMessage());
+                }
+            }
+        }
     }//GEN-LAST:event_btnRemoverAtorActionPerformed
 
     private void btnCancelarAtorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarAtorActionPerformed
-        // TODO add your handling code here:
+        clearInputBoxes();
+        enableButtons(true, false, false, false);
+        addRecord = false;
+            txtNomeAtor.setEnabled(false);
+            txtAtorNascimento.setEnabled(false);
+            jComboBoxPais3.setEnabled(false);
     }//GEN-LAST:event_btnCancelarAtorActionPerformed
 
     private void btnFecharAtorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharAtorActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
     }//GEN-LAST:event_btnFecharAtorActionPerformed
 
     private void txtGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGeneroActionPerformed
@@ -1156,6 +1244,10 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
     private void btnFecharGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharGeneroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnFecharGeneroActionPerformed
+
+    private void NovoAtorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NovoAtorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NovoAtorActionPerformed
 
     
     private void loadRecords() throws SQLException {
@@ -1261,7 +1353,7 @@ public class NewCustomizer extends javax.swing.JPanel implements java.beans.Cust
     private javax.swing.JButton btnSalvarPais;
     private javax.swing.JButton btnSalvarPremio;
     private javax.swing.JButton btnSalvarProdutora;
-    private javax.swing.JComboBox<String> jComboBoxPais1;
+    private javax.swing.JComboBox<String> jComboBoxPais;
     private javax.swing.JComboBox<String> jComboBoxPais2;
     private javax.swing.JComboBox<String> jComboBoxPais3;
     private javax.swing.JLabel jLabelAno;
