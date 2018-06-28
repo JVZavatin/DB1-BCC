@@ -3,7 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Cross%20PC/Documents/GitHub/DB1-BCC/src/teste/NewCustomizer.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/UI/GeneroDialog.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/MODEL/Diretor.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/DAO/Filme_GeneroDAO.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/DAO/FilmeDAO.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/UI/FilmeDialog.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/DAO/DiretorDAO.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/MODEL/Produtora.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/UI/PassaString.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/UI/Genero_FilmeDialog.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/UI/menuDialog.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/MODEL/Filme.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/Main/Main.java</file>
+            <file>file:/home/alan/Documents/BD/projeto/CRUD_1N/src/DAO/ProdutoraDAO.java</file>
         </group>
     </open-files>
 </project-private>
